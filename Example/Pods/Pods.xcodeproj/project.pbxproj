@@ -11,9 +11,8 @@
 		644C0C5198A4978FED1821AAABD3BA3A /* Coconut-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF60227C4B7780B6554F94A87C4709F /* Coconut-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		799D8F273D4674057288D94769D273A9 /* Coconut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C694F6A3A7295522CF3CAE6182AF5315 /* Coconut-dummy.m */; };
 		A74B44F9DBF4AD0A34FEF0D702FC07D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AF3608E257D41F4370BC170D29E7E3AB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69546BB2B231432A71E28C405C97F3B /* ReplaceMe.swift */; };
 		B0D0A17F467A72FA414C15BAE4BB3B6E /* Pods-Coconut_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDBCF40467C2BBFE5F797BE87D09076 /* Pods-Coconut_Tests-dummy.m */; };
-		BB0FDB5D225C6E8700C6184B /* Coconut.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FDB5C225C6E8700C6184B /* Coconut.swift */; };
+		BB0FDB5F225C724900C6184B /* Coconut.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0FDB5E225C724900C6184B /* Coconut.swift */; };
 		D3C0AE9D9628A18D692CA25BBCF6D717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +46,10 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		967E84C1C79C2FCBCD3CAE6081D95206 /* Pods-Coconut_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coconut_Tests.modulemap"; sourceTree = "<group>"; };
 		AAA682E1BC1E11ACF9B7F81C96152064 /* Pods-Coconut_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coconut_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB0FDB5C225C6E8700C6184B /* Coconut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coconut.swift; sourceTree = "<group>"; };
+		BB0FDB5E225C724900C6184B /* Coconut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coconut.swift; path = Coconut/Classes/Coconut.swift; sourceTree = "<group>"; };
 		C3BFB0CDB68B35D963601653E8D86B79 /* Pods-Coconut_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coconut_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C694F6A3A7295522CF3CAE6182AF5315 /* Coconut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Coconut-dummy.m"; sourceTree = "<group>"; };
 		DB630ED1F6BBC5C766266F2B53E85796 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E69546BB2B231432A71E28C405C97F3B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Coconut/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		EB06C64C6F9E2631A084074F2BDBEAC2 /* Coconut.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Coconut.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,14 +143,6 @@
 			path = "Target Support Files/Pods-Coconut_Tests";
 			sourceTree = "<group>";
 		};
-		BB0FDB5B225C6E7200C6184B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BB0FDB5C225C6E8700C6184B /* Coconut.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,10 +170,9 @@
 		E9F2C805296B3978D51BF1F3DBFCFE42 /* Coconut */ = {
 			isa = PBXGroup;
 			children = (
-				BB0FDB5B225C6E7200C6184B /* Classes */,
-				E69546BB2B231432A71E28C405C97F3B /* ReplaceMe.swift */,
 				4F57A559E1745455F1B5EA070B6AEA3A /* Pod */,
 				689461FDDDEE994F1215F9A0F976AD7C /* Support Files */,
+				BB0FDB5E225C724900C6184B /* Coconut.swift */,
 			);
 			name = Coconut;
 			path = ../..;
@@ -254,6 +243,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					106C09174A9EC0527CC06DB6C7D5769D = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -287,8 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799D8F273D4674057288D94769D273A9 /* Coconut-dummy.m in Sources */,
-				AF3608E257D41F4370BC170D29E7E3AB /* ReplaceMe.swift in Sources */,
-				BB0FDB5D225C6E8700C6184B /* Coconut.swift in Sources */,
+				BB0FDB5F225C724900C6184B /* Coconut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB06C64C6F9E2631A084074F2BDBEAC2 /* Coconut.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -529,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB06C64C6F9E2631A084074F2BDBEAC2 /* Coconut.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
