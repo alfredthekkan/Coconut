@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 public class Coconut {
     
@@ -15,6 +16,10 @@ public class Coconut {
     
     public class var author: String {
         return "Alfred Poulose Thekkan"
+    }
+    
+    public class var alamofireVersion: String {
+        return "\(AlamofireVersionNumber)" 
     }
     
 }
