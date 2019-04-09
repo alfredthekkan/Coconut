@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Coconut_Tests' do
+  pod 'Coconut', :path => '../'
+  
+  
+end
