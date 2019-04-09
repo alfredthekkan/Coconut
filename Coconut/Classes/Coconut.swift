@@ -14,7 +14,7 @@ public class Coconut {
     }
     
     public class var author: String {
-        return "Alfred Thekkan"
+        return "Alfred Poulose Thekkan"
     }
     
 }
