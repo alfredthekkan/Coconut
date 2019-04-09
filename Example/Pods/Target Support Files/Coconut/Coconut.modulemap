@@ -1,0 +1,6 @@
+framework module Coconut {
+  umbrella header "Coconut-umbrella.h"
+
+  export *
+  module * { export * }
+}

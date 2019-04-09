@@ -1,0 +1,16 @@
+PODS:
+  - Coconut (0.1.0)
+
+DEPENDENCIES:
+  - Coconut (from `../`)
+
+EXTERNAL SOURCES:
+  Coconut:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Coconut: bb61a31bd0fa5e9f727a8e7ba9d1b85fb58446dc
+
+PODFILE CHECKSUM: 4df9420fadbdc806b29f62d38227a8d55b1beed9
+
+COCOAPODS: 1.4.0
